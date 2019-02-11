@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <body>
+            <h1>Amnesia SMS Project</h1>
+            <h2>Instructions</h2>
+            <div id="instructions">
+                <ul>
+                    <li>Enter admin `accountSid`, `authToken` in `index.js`.</li>
+                    <li>Enter the phone number provided by Twilio to admin in the `from` variable in `index.js`.</li>
+                    <li>Run `node index` in the directory of the project to start the server. </li>
+                    <li>Go to `localhost:3000` using your browser.</li>
+                    <li>Enter user's name and phone number in the given form.</li>
+                    <li>Note: only those phone numbers can receive messages which have been authorised by the admin in Twilio dashboard</li>
+                    <li>Note: If a request has already been sent and before the status being logged the user stops or ends the app, that request will still be processed. However, no further requests will be made until the app is restarted.</li>
+                </ul>
+            </div>
+            <form id="userDetails">
+                Name:<br>
+                <input type="text" id="name" value="<%=name%>">
+                <br>
+                Phone Number:<br>
+                <input type="text" id="phone" value="<%=phone%>">
+                <br><br>
+            </form>
+            <button id="start-app">Start App</button>
+            <button id="stop-app" disabled=true>Stop App</button>
+            <button id="clear-log">Clear Log</button>
+            <button id="end-app" disabled=true>End App</button>
+
+            <h2>App Status</h2>
+            <b>Status</b>            
+            <div id="app-status">
+                <p>App not running</p>
+            </div>
+            <div>
+                <b>Current time</b><p id="current-time"> ____-__-__  __:__:__</p>
+                <b>Start time</b><p id="start-time"> ____-__-__  __:__:__</p>
+                <b>Running time</b><p id="running-time"> __:__:__</p>
+            </div>
+
+            <h2>Sent Messages</h2>
+            <div id="Sent-Messages">
+                <p></p>
+            </div>
+            
+            <h2>Failed Messages</h2>
+            <div id="Failed-Messages">
+                <p></p>
+            </div>
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="/scripts"></script>
+            <script src="/utilities"></script>
+        </body>
+    </head>
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "amnesia-sms-project",
+  "version": "1.0.0",
+  "description": "Twilio based reminder application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsunit/amnesia-sms-project.git"
+  },
+  "author": "gsunit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gsunit/amnesia-sms-project/issues"
+  },
+  "homepage": "https://github.com/gsunit/amnesia-sms-project#readme",
+  "dependencies": {
+    "cron": "^1.6.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "twilio": "^3.28.0"
+  }
+}
